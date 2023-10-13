@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yasingok.CatchTheDogApp.LeaderBoard">
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/GenelLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:text="Leaderboard"
+            android:textAlignment="center"
+            android:textSize="48sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/GenelLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="3dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/back_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LinearLayout1">
+
+        <LinearLayout
+            android:id="@+id/LinearLayout2"
+            android:layout_width="106dp"
+            android:layout_height="508dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="99dp">
+
+            <TextView
+                android:id="@+id/textEasy"
+                android:layout_width="106dp"
+                android:layout_height="36dp"
+                android:layout_marginBottom="20dp"
+                android:text="Easy"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="99dp" />
+
+            <ListView
+                android:id="@+id/ListEasy"
+                android:layout_width="109dp"
+                android:layout_height="453dp"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="150dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout3"
+            android:layout_width="106dp"
+            android:layout_height="508dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical"
+            app:layout_editor_absoluteX="152dp"
+            app:layout_editor_absoluteY="99dp">
+
+            <TextView
+                android:id="@+id/textMedium"
+                android:layout_width="106dp"
+                android:layout_height="36dp"
+                android:layout_marginBottom="20dp"
+                android:text="Medium"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                tools:layout_editor_absoluteX="152dp"
+                tools:layout_editor_absoluteY="99dp" />
+
+            <ListView
+                android:id="@+id/ListMedium"
+                android:layout_width="109dp"
+                android:layout_height="453dp"
+                tools:layout_editor_absoluteX="152dp"
+                tools:layout_editor_absoluteY="150dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/constraintLayout4"
+            android:layout_width="106dp"
+            android:layout_height="508dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical"
+            app:layout_editor_absoluteX="289dp"
+            app:layout_editor_absoluteY="99dp">
+
+            <TextView
+                android:id="@+id/textHard"
+                android:layout_width="106dp"
+                android:layout_height="36dp"
+                android:layout_marginBottom="20dp"
+                android:text="Hard"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                tools:layout_editor_absoluteX="289dp"
+                tools:layout_editor_absoluteY="99dp" />
+
+            <ListView
+                android:id="@+id/ListHard"
+                android:layout_width="109dp"
+                android:layout_height="453dp"
+                tools:layout_editor_absoluteX="277dp"
+                tools:layout_editor_absoluteY="150dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="back"
+        android:text="Back"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/GenelLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
